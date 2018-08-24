@@ -1,0 +1,38 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.number, .operator, .res {
+  max-width: 600px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  grid-auto-flow: dense;
+}
+
+.number span, .operator span {
+  border: 1px solid black;
+  font-size: 1.7rem;
+  padding: 3px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.number {
+  margin: auto auto 20px auto;
+}
+
+.res {
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */

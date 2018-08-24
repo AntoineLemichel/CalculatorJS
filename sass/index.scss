@@ -1,0 +1,47 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+%basic {
+  max-width: 600px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  grid-auto-flow: dense;
+}
+
+%button {
+  border: 1px solid black;
+  font-size: 1.7rem;
+  padding: 3px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.number {
+  @extend %basic;
+  margin: auto auto 20px auto;
+  span {
+    @extend %button;
+  }
+}
+
+.operator {
+  @extend %basic;
+  span {
+    @extend %button;
+  }
+}
+
+.res {
+  @extend %basic;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
