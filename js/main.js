@@ -3,7 +3,7 @@ let resultat = "";
 let display = document.getElementById("res");
 let equal = document.getElementById("equal");
 let operator = document.getElementsByClassName("operators");
-
+let clear = document.getElementById("clear");
 
 
 for (let i = 0; i < numbers.length; i++) {
@@ -13,11 +13,15 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 for (let i = 0; i < operator.length; i++) {
-  operator[i].addEventListener("click", function(){
+  operator[i].addEventListener("click", function () {
     getValue(this);
   });
 }
 
+clear.addEventListener("click", function () {
+  resultat = "0";
+  display.innerHTML = resultat;
+});
 
 function getValue(element) {
   resultat += element.innerHTML;
