@@ -19,8 +19,8 @@ for (let i = 0; i < operator.length; i++) {
 }
 
 clear.addEventListener("click", function () {
-  resultat = "0";
-  display.innerHTML = resultat;
+  resultat = "";
+  display.innerHTML = "0";
 });
 
 function getValue(element) {
@@ -32,5 +32,4 @@ equal.addEventListener("click", function () {
   var resultTotal = eval(resultat);
   eval(resultTotal);
   display.innerHTML = resultTotal;
-
 });
